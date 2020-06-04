@@ -1,7 +1,13 @@
 [package]
-name = "new_project"
+name = "trade_game"
 version = "0.1.0"
-authors = ["Your Name <you@example.com>"]
+authors = ["Claire Robsahm <claire@chapien.net>"]
 
-[dependencies]
-amethyst = "*"
+[features]
+default = ["vulkan"]
+vulkan = ["amethyst/vulkan"]
+metal = ["amethyst/metal"]
+
+[dependencies.amethyst]
+version = "0.15.0"
+default-features = true
