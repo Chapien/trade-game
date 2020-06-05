@@ -1,4 +1,5 @@
 extern crate amethyst;
+mod game;
 
 use amethyst::{
     prelude::*,
@@ -9,10 +10,7 @@ use amethyst::{
     },
     utils::application_root_dir,
 };
-
-pub struct Game;
-
-impl SimpleState for Game {}
+use crate::game::Game;
 
 fn main() -> amethyst::Result<()> {
 
