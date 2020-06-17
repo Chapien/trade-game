@@ -8,5 +8,8 @@ default = ["vulkan"]
 vulkan = ["amethyst/vulkan"]
 metal = ["amethyst/metal"]
 
+[dependencies]
+decimal = "2.0.4"
+
 [dependencies.amethyst]
 version = "0.15.0"
