@@ -1,5 +1,6 @@
 extern crate amethyst;
 mod game;
+pub mod simulation;
 
 use amethyst::{
     prelude::*,

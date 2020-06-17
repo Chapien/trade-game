@@ -10,4 +10,3 @@ metal = ["amethyst/metal"]
 
 [dependencies.amethyst]
 version = "0.15.0"
-default-features = true
