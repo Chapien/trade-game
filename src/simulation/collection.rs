@@ -27,6 +27,15 @@ impl<T> Collection<T> {
     }
 }
 
+impl <T> Default for Collection<T> {
+    fn default() -> Self {
+        Collection {
+            items: HashMap::default(),
+            next_id: Id::default(),
+        }
+    }
+}
+
 #[derive(Debug)]
 pub struct Id<T> {
     id: usize,
